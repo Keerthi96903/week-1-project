@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer - Travel Packages</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Travel Packages Section */
+    .packages {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .packages h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .package-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .package-card h3 {
+      font-size: 22px;
+      margin-top: 10px;
+    }
+
+    .package-card p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .package-card .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0077b6;
+      margin-top: 10px;
+    }
+
+    .package-card .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .package-card .btn:hover {
+      background: #005f87;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Travel Explorer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="package.html">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+          <li><a href="review.html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Travel Packages Section -->
+  <section class="packages">
+    <h2>Exclusive Travel Packages</h2>
+    <div class="packages-grid">
+      <!-- Package 1 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img05.jpg" alt="Romantic Paris Package">
+        <h3>Romantic Paris</h3>
+        <p>Discover the city of love with our Romantic Paris Package. Visit the Eiffel Tower, Louvre Museum, and more.</p>
+        <p class="price">$2,000 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img04.jpg" alt="Safari Adventure Package">
+        <h3>Safari Adventure</h3>
+        <p>Embark on a thrilling safari adventure in Kenya. Explore wildlife reserves and observe majestic animals in their natural habitat.</p>
+        <p class="price">$1,500 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img02.jpg" alt="Luxury Cruise Package">
+        <h3>Luxury Cruise</h3>
+        <p>Sail across the Mediterranean on a luxury cruise. Enjoy gourmet meals, world-class entertainment, and breathtaking views.</p>
+        <p class="price">$3,500 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img07.jpg" alt="Beach Getaway in Bali">
+        <h3>Bali Beach Getaway</h3>
+        <p>Relax in paradise with a stay at a luxury resort in Bali. Experience white sandy beaches and crystal-clear waters.</p>
+        <p class="price">$1,200 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Package 5 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img08.jpg" alt="New Zealand Adventure">
+        <h3>New Zealand Adventure</h3>
+        <p>Explore the majestic mountains and breathtaking landscapes of New Zealand. Perfect for adventure lovers and nature enthusiasts.</p>
+        <p class="price">$2,500 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+
+      <!-- Package 6 -->
+      <div class="package-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img09.jpg" alt="Cultural Japan Package">
+        <h3>Cultural Japan</h3>
+        <p>Experience the beauty of Japan’s rich culture, from the serene temples of Kyoto to the vibrant streets of Tokyo.</p>
+        <p class="price">$2,200 per person</p>
+        <a href="book-now.html" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Travel Explorer. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

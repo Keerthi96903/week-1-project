@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer - Destinations</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Destinations Section */
+    .destinations {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .destinations h2 {
+      margin-bottom: 20px;
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .destination-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination-card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .destination-card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Travel Explorer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="package.html">Package</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Destinations Section -->
+  <section class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destination-grid">
+      <!-- Static Destination 1 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img02.jpg" alt="Paris">
+        <h3>Paris, France</h3>
+        <p>The city of love awaits you with its iconic Eiffel Tower and romantic vibes.</p>
+      </div>
+      
+      <!-- Static Destination 2 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img03.jpg" alt="Tokyo">
+        <h3>Tokyo, Japan</h3>
+        <p>Experience the perfect blend of modernity and tradition in Japan's capital.</p>
+      </div>
+
+      <!-- Static Destination 3 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img04.jpg" alt="Rome">
+        <h3>Rome, Italy</h3>
+        <p>Step back in time and explore the historic wonders of the Eternal City.</p>
+      </div>
+
+      <!-- Static Destination 4 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img05.jpg" alt="Sydney">
+        <h3>Sydney, Australia</h3>
+        <p>Discover stunning beaches and the iconic Sydney Opera House.</p>
+      </div>
+
+      <!-- Static Destination 5 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img06.jpg" alt="Cape Town">
+        <h3>Cape Town, South Africa</h3>
+        <p>Immerse yourself in breathtaking landscapes and rich culture.</p>
+      </div>
+
+      <!-- Static Destination 6 -->
+      <div class="destination-card">
+        <img src="C:\Users\Admin\Desktop\NextGen-Internship-P6-Week1-main\public\tour-images\tour-img07.jpg" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+        <p>Relax in paradise with serene beaches and lush greenery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Travel Explorer. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

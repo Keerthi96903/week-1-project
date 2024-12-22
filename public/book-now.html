@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Package - Travel Explorer</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0077b6;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Booking Form Section */
+    .booking-form {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .package-details {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .package-details h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .package-details p {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    button {
+      padding: 15px 25px;
+      background-color: #0077b6;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005f87;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Travel Explorer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="package.html">Packages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="review.html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="booking-form">
+    <h2>Book Your Package</h2>
+
+    <!-- Package Details -->
+    <div class="package-details">
+      <h3>Package: Romantic Paris</h3>
+      <p><strong>Duration:</strong> 7 days</p>
+      <p><strong>Price:</strong> $2,000 per person</p>
+      <p><strong>Inclusions:</strong> Accommodation, guided tours, airport transfers</p>
+      <p><strong>Exclusions:</strong> Flights, personal expenses</p>
+    </div>
+
+    <!-- Booking Form -->
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label for="package">Choose Package:</label>
+        <select id="package" name="package" required>
+          <option value="romantic-paris">Romantic Paris - $2000</option>
+          <option value="safari-adventure">Safari Adventure - $1500</option>
+          <option value="luxury-cruise">Luxury Cruise - $3500</option>
+          <option value="bali-beach-getaway">Bali Beach Getaway - $1200</option>
+          <option value="new-zealand-adventure">New Zealand Adventure - $2500</option>
+          <option value="cultural-japan">Cultural Japan - $2200</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="travel-date">Preferred Travel Date:</label>
+        <input type="date" id="travel-date" name="travel_date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Travel Explorer. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
